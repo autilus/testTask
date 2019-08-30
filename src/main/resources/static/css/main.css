@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    background-color: RGB(232, 233, 234);
+    box-sizing: border-box;
+    color: RGB(150, 151, 151);
+}
+
+body {
+    margin: 0 auto;
+    width: 66.66667%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2.header {
+    font-size: 30px;
+    padding: 30px 0px;
+    color: RGB(78, 81, 83);
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+}
+
+u {
+    background-color: white;
+}
+
+.wrapper {
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.column {
+    flex: 1;
+    border: 1px;
+    border-radius: 6px;
+    margin: 3px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.column_header {
+    background-color: RGB(255, 255, 255);
+    padding: 2px 0px;
+    color: RGB(78, 81, 83);
+}
+
+.column_images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.column_image {
+    flex: 1;
+    background-color: white;
+}
+
+.column_paragraph {
+    background-color: RGB(255, 255, 255);
+    padding-bottom: 40px;
+    font-style: italic;
+}
+
+.column_link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 980px) {
+    .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    body {
+        width: 98%
+    }
+}
